@@ -1,0 +1,121 @@
+body{ /* esto es un background pero del body, si no te convence lo podemos cambiar o sacar */
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1{ /* Titulo = Volkswagen */
+    text-align: center;
+    background-color:#333333;
+    color:white;
+}
+
+.bg{ /* background auto amarillo*/
+    background-image:url(img/autobg.jpeg);
+    background-position: center;
+    height:620px;
+    position:relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text{ /* texto dentro del background auto amarillo*/
+    text-align:center;
+    margin:auto;
+    width:500px;
+    padding-top:20px;
+    padding-left:100px;
+    padding-right:100px;
+    margin-top:10px;
+    background-color:rgba(255,255,255,.2);
+    border-radius:10px;
+    box-shadow:5px 5px gray;
+}
+
+
+.imagenes{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 40px;
+    margin:auto;
+}
+h3{
+    text-align: center;
+    background-color: grey;
+    color: black;
+    padding: 20px;
+}
+.texto{
+    text-align: center;
+    color: black;
+    padding: 20px;
+    background-color: grey;
+}
+.imagen1{
+    font-size: medium;
+    /*padding-left: 40px;*/
+    text-align: center;
+}
+.imagen2{
+    font-size: medium;
+    /*padding-left: 40px;*/
+    text-align: center;
+}
+h6{
+    font-size: medium;
+    padding-left: 40px;
+    text-align: center;
+}
+/* fotos con las cards*/
+@media(min-width:400px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .card-img{
+        flex-grow: 1;
+    }
+}
+.cards{
+    border-radius: 2px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+.card-body{
+    text-align: center;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    color: white;
+}
+.contenedor{
+    width: 90%;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    padding: 40px;
+    margin: 20px auto;
+}
+.contenedor h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contenido{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.formulario{
+    padding-left: 20px;
+    width: 100%;
+}
+.campos{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.alert{
+    display: block;
+    color: white;
+    background: #721c24;
+}
