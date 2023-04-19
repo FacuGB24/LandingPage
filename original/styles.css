@@ -12,6 +12,8 @@ h1{ /* Titulo = Volkswagen */
 }
 
 h2{
+    text-align: center;
+    background-color:#333333;
     color:white;
 }
 
@@ -40,9 +42,6 @@ h2{
     border-radius:10px;
     box-shadow:5px 5px gray;
 }
-
-
-
 
 .imagenes{
     display: inline-flex;
@@ -101,7 +100,7 @@ h6{
     color: white;
 }
 .contenedor{
-    width: 90%;
+    width: 100%;
     background: linear-gradient(to right, #2c3e50, #bdc3c7);
     padding: 40px;
     margin: 20px auto;
@@ -130,7 +129,16 @@ h6{
     color: white;
     background: #721c24;
 }
-
+.container-fp{
+    width: 100%;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    padding: 40px;
+    margin: 20px auto;
+}
+.txtComment{
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 /* FORMULARIO DE PROCESO */
 

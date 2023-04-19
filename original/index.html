@@ -103,24 +103,24 @@
 
   <!-- FORMULARIO DE PROCESO -->
 
-         <div class="container">
+         <div class="container-fp">
              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 <form id="formularioProceso" method="post">
                   <h2>Formulario Consultas</h2>
                     <label for="email">Email</label>
-                    <input type="email " id="email" name="email">
+                    <input type="email " id="email" name="email" class="campos">
 
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" class="campos">
 
                      <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido">
+                    <input type="text" id="apellido" name="apellido" class="campos">
 
                      <label for="pais">Pais</label>
-                    <input type="text" id="pais" name="pais">
+                    <input type="text" id="pais" name="pais" class="campos">
 
                     <label for="txtComment" class="form-label">Comment</label>
-                    <textarea class="form-control" id="txtComment" rows="2"></textarea>
+                    <textarea class="form-control" id="txtComment" rows="2" ></textarea>
 
                     <button type="submit">Continuar</button>
                 </form>
@@ -129,6 +129,23 @@
             </div>
 
     <!-- FIN FORMULARIO PROCESO -->
+
+    <!--empieza el formulario de contacto-->
+  <div class="contenedor">
+    <h1>Formulario de contacto</h1>
+      <div class="contenido">
+        <form action="" method="get" class="formulario">
+          <input type="text" name="nombres" placeholder="Nombre" id="nombres" class="campos">
+          <input type="text" name="apellidos" placeholder="Apellido" id="apellidos" class="campos">
+          <input type="email" name="correos" placeholder="Correo electronico" id="correos" class="campos">
+          <input type="number" name="telefonos" placeholder="Telefono" id="telefonos" class="campos">
+          <input type="number" name="dnis" placeholder="DNI" id="dnis" class="campos">
+          <button type="button" onclick="validarFormulario()" id="button">Validar datos</button>
+          <button type="submit" onclick="mensaje()">Enviar</button>
+        </form>
+      </div>
+  </div>
+  <!--termina el formulario de contacto-->
 
 
   <!-- FOOTER/PIE DE PÁGINA -->
@@ -210,6 +227,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <!-- custom js -->
     <script src="formulario.js"></script>
+    <!-- archivo js formulario de contacto-->
+  <script src="formcontacto.js"></script>
 
 </body>
 </html>
